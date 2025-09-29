@@ -2,6 +2,7 @@
 import Modal from "@/components/Modal";
 import data from "@/data/home.json";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { FaPlay } from "react-icons/fa";
 import { HiChevronRight } from "react-icons/hi";
@@ -94,7 +95,7 @@ export default function Home() {
         {/* About Us Section */}
         <section className="py-16 px-5 md:px-10">
           <div className="mx-auto px-8 py-30 bg-secondary-500">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-30 items-center">
               <div className="relative">
                 <div className="w-full bg-gray-50 flex items-center justify-center max-w-[554px] h-[700px] ml-auto clip-Card clip-Card-left-secondary">
                   <Image
@@ -121,23 +122,26 @@ export default function Home() {
                 <h2 className="text-4xl font-bold text-gray-800 mb-6">
                   About Us
                 </h2>
-                <p className="text-gray-700 mb-6">
+                <p className="text-gray-700 mb-12">
                   Fasyl Technology Group was founded in 1999 with the name
                   Finance Applications System Limited and has metamorphosed from
                   a one-country financial institution to a multiple-country
                   technology conglomerate, covering aspects of not just
                   financial technology but other industries and markets.
                 </p>
-                <p className="text-gray-700 mb-8">
+                <p className="text-gray-700 mb-12">
                   Currently, Fasyl, with its 13-country operational office
                   presence, services over 100 countries and beyond, including
                   small, medium, and large institutions in finance,
                   telecommunications, manufacturing, the public sector, and
                   more.
                 </p>
-                <button className="bg-gray-800 text-white px-8 py-3 rounded-full font-medium hover:bg-gray-900 transition-colors">
+                <Link
+                  href="/company/about-us"
+                  className="bg-gray-800 text-white px-8 py-3 rounded-full font-medium hover:bg-gray-900 transition-colors"
+                >
                   Learn More
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -346,6 +350,25 @@ export default function Home() {
 
         {/* Footer */}
       </div>
+
+      {/* <Modal
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        // title="Example Modal"
+        size="full"
+        showCloseButton={true}
+        closeOnOverlayClick={true}
+        closeOnEscape={true}
+      >
+        <div className="grid grid-cols-5 gap-10 aspect-5/2 relative">
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </Modal> */}
 
       <Modal
         isOpen={isOpen}

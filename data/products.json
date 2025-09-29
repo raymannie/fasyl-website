@@ -15,6 +15,10 @@
         "logo": "/images/partners/FSDH.png"
       },
       {
+        "name": "Polaris",
+        "logo": "/images/partners/polaris.png"
+      },
+      {
         "name": "Eco",
         "logo": "/images/partners/eco-bank.png"
       },
@@ -133,7 +137,7 @@
     "name": "Digital & Enterprise",
     "title": "Maximize Your Efficiency and Growth with Fasyl’s Digital and Enterprise Solutions",
     "description": "<p>Fasyl’s digital and enterprise solutions empower industries like telecom, banking, fintech, and government to achieve unparalleled growth. Our comprehensive product suites offer inclusive technology platforms for businesses of all sizes, facilitating seamless transactions and customer service. With support for multiple languages, including English, French, Portuguese, and Arabic, our solutions ensure accessibility and integration into the financial ecosystem across various regions. </p>",
-    "heroImage": "/images/typing-hand.jpg",
+    "heroImage": "/images/typing-hand.png",
     "successStories": [
       {
         "name": "Polaris Bank",

@@ -189,13 +189,25 @@ export default function Footer() {
             </p>
             <div className="flex items-center space-x-6 text-gray-400 mt-4 md:mt-0 text-lg">
               <p className="text-xs">Connect With Us:</p>
-              <a href="#" className="logo">
+              <a
+                href="https://www.linkedin.com/company/fasylgroup/"
+                className="logo"
+                target="_blank"
+              >
                 <PiLinkedinLogoLight />
               </a>
-              <a href="#" className="logo">
+              <a
+                href="https://www.youtube.com/@Fasylgroup278"
+                target="_blank"
+                className="logo"
+              >
                 <PiYoutubeLogoLight />
               </a>
-              <a href="#" className="logo">
+              <a
+                href="https://www.instagram.com/fasyl_group/"
+                target="_blank"
+                className="logo"
+              >
                 <PiInstagramLogoLight />
               </a>
             </div>
