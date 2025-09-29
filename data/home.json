@@ -1,0 +1,103 @@
+{
+  "mission": [
+    {
+      "title": "Expertise",
+      "description": "With decades of experience in financial technology and beyond, we bring deep knowledge and understanding to every project, ensuring the highest level of competence and guaranteeing results. ",
+      "image": "/images/innovate.jpg"
+    },
+    {
+      "title": "Innovation",
+      "description": "We provide cutting-edge solutions tailored to diverse industries, leveraging the latest technologies and trends to drive innovation and keep your business ahead of the curve.",
+      "image": "/images/idea.jpg"
+    },
+    {
+      "title": "End-to-end Solutions",
+      "description": "From the initial consultation to implementation and ongoing support, we offer comprehensive end-to-end solutions that address your unique challenges and goals, ensuring success.",
+      "image": "/images/solution.jpg"
+    }
+  ],
+
+  "industry": {
+    "title": "Our Clients",
+    "description": "Meet the industry leaders who trust us to drive their success",
+    "partners": [
+      {
+        "name": "energy bank",
+        "logo": "/images/partners/energy-bank.png"
+      },
+      {
+        "name": "Fidelity Bank",
+        "logo": "/images/partners/energy-bank.png"
+      },
+      {
+        "name": "Nthc",
+        "logo": "/images/partners/nthc.png"
+      },
+      {
+        "name": "Bloom Bank",
+        "logo": "/images/partners/bloom-bank.png"
+      },
+      {
+        "name": "First Atlantic",
+        "logo": "/images/partners/first-atlantic.png"
+      },
+      {
+        "name": "Oakwood green",
+        "logo": "/images/partners/oakwood-green.png"
+      },
+      {
+        "name": "First Bank",
+        "logo": "/images/partners/first-bank.png"
+      },
+      {
+        "name": "Lagos",
+        "logo": "/images/partners/lagos.png"
+      },
+      {
+        "name": "Eco Bank",
+        "logo": "/images/partners/eco-bank.png"
+      },
+      {
+        "name": "Access Bank",
+        "logo": "/images/partners/access-bank.png"
+      },
+      {
+        "name": "Star Assurance",
+        "logo": "/images/partners/star-assurance.png"
+      }
+    ]
+  },
+
+  "expertise": {
+    "title": "",
+    "description": "",
+    "banner": "/images/collaborate.jpg",
+    "section": [
+      {
+        "id": "financial-tech",
+        "title": "Business Process Review (BPR)",
+        "content": "We provide cutting-edge fintech solutions that help businesses optimize their financial operations, streamline processes, and enhance customer experiences through innovative technology."
+      },
+      {
+        "id": "payment-systems",
+        "title": "Implementation Services",
+        "content": "Secure, scalable payment processing solutions that support multiple currencies, payment methods, and real-time transactions. Our systems ensure PCI compliance and fraud protection while delivering seamless user experiences."
+      },
+      {
+        "id": "business-intelligence",
+        "title": "Post-Implementation Support",
+        "content": "Advanced analytics platforms that transform raw financial data into actionable insights. Features include real-time dashboards, predictive modeling, risk assessment tools, and comprehensive reporting capabilities."
+      },
+      {
+        "id": "ai-automation",
+        "title": "Smart Automation",
+        "content": "Intelligent automation solutions powered by machine learning algorithms. Automate routine financial processes, detect anomalies, optimize trading strategies, and enhance decision-making with AI-driven insights."
+      },
+      {
+        "id": "digital-transformation",
+        "title": "Digital Infrastructure",
+        "content": "Comprehensive digital transformation services that modernize legacy financial systems, implement cloud-based architectures, and create omnichannel customer experiences that drive business growth."
+      }
+    ]
+  }
+}

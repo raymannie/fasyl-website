@@ -10,17 +10,142 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-brand-50: #ced2d4;
+  --color-brand-100: #adb4b7;
+  --color-brand-200: #858f94;
+  --color-brand-300: #5c6a70;
+  --color-brand-400: #33444c;
+  --color-brand-500: #0a1f28;
+  --color-brand-600: #081a21;
+  --color-brand-700: #07151b;
+  --color-brand-800: #051014;
+  --color-brand-900: #030a0d;
+  --color-brand-950: #020608;
+
+  --color-secondary-50: #fbf8e6;
+  --color-secondary-100: #f9f3d5;
+  --color-secondary-200: #f6edc0;
+  --color-secondary-300: #f3e6aa;
+  --color-secondary-400: #f0e095;
+  --color-secondary-500: #edda80;
+  --color-secondary-600: #c6b66b;
+  --color-secondary-700: #9e9155;
+  --color-secondary-800: #776d40;
+  --color-secondary-900: #4f492b;
+  --color-secondary-950: #2f2c1a;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full text-sm font-medium transition-colors
+           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500 
+           focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply bg-brand-500 text-secondary-500 px-6 py-3 rounded-full font-medium hover:bg-secondary-600 transition-colors cursor-pointer;
+  }
+
+  .btn-primary-outlined {
+    @apply border border-brand-500 text-brand-500 px-6 py-3 rounded-full font-medium hover:bg-brand-600 hover:text-secondary-600 transition-colors cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-500 text-black px-6 py-3 rounded-full font-medium hover:bg-secondary-600 transition-colors cursor-pointer;
+  }
+
+  .input {
+    @apply w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-yellow-400 focus:border-transparent outline-none;
+  }
+
+  .logo {
+    @apply hover:bg-white inline-flex h-[36px] w-[36px] rounded-3xl bg-secondary-500 text-brand-500 items-center justify-center;
+  }
+
+  .clip-Card {
+    @apply after:content-[''] after:left-0 after:top-0 after:block;
+    position: relative;
+  }
+  .clip-Card::after {
+    width: 0px;
+    height: 0px;
+    border-width: 40px;
+    background: transparent;
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+  }
+
+  .clip-Card-left-brand::after {
+    /* @apply clip-Card::after; */
+    border-color: #0a1f28 transparent transparent #0a1f28;
+    left: 0;
+  }
+  .clip-Card-right-brand::after {
+    /* @apply clip-Card::after; */
+    border-color: #0a1f28 #0a1f28 transparent transparent;
+    left: auto;
+    right: 0;
+  }
+  .clip-Card-left-secondary::after {
+    /* @apply clip-Card::after; */
+    border-color: #edda80 transparent transparent #edda80;
+    left: 0;
+  }
+  .clip-Card-left-white::after {
+    /* @apply clip-Card::after; */
+    border-color: #fff transparent transparent #fff;
+    left: 0;
+  }
+
+  .title-tip,
+  .title-tip-brand,
+  .title-tip-white {
+    display: flex;
+    align-items: center;
+  }
+  .title-tip::before {
+    @apply bg-secondary-500 mr-2;
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+  }
+
+  .title-tip-brand::before {
+    @apply bg-brand-500 mr-2;
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+  }
+
+  .title-tip-white::before {
+    @apply bg-white mr-2;
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+  }
+
+  .content p {
+    margin-bottom: 20px;
+  }
 }

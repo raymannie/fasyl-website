@@ -1,0 +1,198 @@
+[
+  {
+    "id": "banking",
+    "name": "Banking",
+    "title": "Empowering Banks to Thrive in a Digital-First World with Agile Solutions",
+    "description": "The banking industry is undergoing rapid transformation driven by digital innovation and evolving customer expectations. Fasyl Technology Group is at the forefront of this evolution, equipping banks with the technology and expertise necessary to remain competitive, enhance efficiency, and elevate customer experiences. With our cutting-edge solutions, we assist banks in navigating the complexities of the digital landscape and unlocking new growth opportunities.",
+    "heroImage": "/images/industries/banking.jpg",
+    "successStories": [
+      {
+        "name": "energy bank",
+        "logo": "/images/partners/energy-bank.png"
+      },
+      {
+        "name": "Fidelity Bank",
+        "logo": "/images/partners/fidelity.png"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Seamless Integration",
+        "description": "Optimize your core banking operations with our advanced solutions that streamline processes, reduce costs, and improve service delivery.",
+        "image": "/images/industries/seamlss-integration.jpg"
+      },
+      {
+        "title": "Digital Banking Solutions",
+        "description": "We help you deliver a true omni-channel experience across all platforms, providing customers with seamless digital interactions.",
+        "image": "/images/industries/digital-banking.jpg"
+      },
+      {
+        "title": "Risk Management and Compliance",
+        "description": "We allow you strengthen your risk management framework and ensure compliance with the latest regulations to protect your institution and customers.",
+        "image": "/images/industries/risk-management.jpg"
+      },
+      {
+        "title": "Payment Processing Solutions",
+        "description": "We help you sreamline payment processes with secure and efficient solutions, enhancing transaction speed and reliability.",
+        "image": "/images/industries/payment-processing.jpg"
+      },
+      {
+        "title": "Enterprise Application Integration",
+        "description": "Ensure seamless integration and data management with our robust Enterprise Application solutions, optimizing workflows across your organization.",
+        "image": "/images/industries/enterprise-app.jpg"
+      },
+      {
+        "title": "Smart Automation",
+        "description": "Drive operational efficiency with our Smart Automation solutions, minimizing errors and enhancing productivity through streamlined processes.",
+        "image": "/images/industries/smart-automation.jpg"
+      }
+    ]
+  },
+  {
+    "id": "public-sector",
+    "name": "Public Sector",
+    "title": "Enabling Efficient Governance Through Digital Platforms Built for Public Service Delivery",
+    "description": "Fasyl has worked with the public sector to develop and deploy robust digital platforms that enable seamless service delivery and optimize internal workflows. Through strategic collaboration with government agencies, Fasyl has helped digitize manual processes, enhance transparency, and improve access to essential services for citizens. Our solutions are built to meet regulatory standards while ensuring scalability, security, and ease of use—supporting public institutions in their mission to deliver efficient, technology-driven governance.",
+    "heroImage": "/images/industries/code.jpg",
+    "successStories": [
+      {
+        "name": "energy bank",
+        "logo": "/images/partners/energy-bank.png"
+      },
+      {
+        "name": "Fidelity Bank",
+        "logo": "/images/partners/fidelity.png"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Seamless Integration",
+        "description": "Optimize your core banking operations with our advanced solutions that streamline processes, reduce costs, and improve service delivery.",
+        "image": "/images/industries/seamlss-integration.jpg"
+      },
+      {
+        "title": "Digital Banking Solutions",
+        "description": "We help you deliver a true omni-channel experience across all platforms, providing customers with seamless digital interactions.",
+        "image": "/images/industries/digital-banking.jpg"
+      },
+      {
+        "title": "Risk Management and Compliance",
+        "description": "We allow you strengthen your risk management framework and ensure compliance with the latest regulations to protect your institution and customers.",
+        "image": "/images/industries/risk-management.jpg"
+      },
+      {
+        "title": "Payment Processing Solutions",
+        "description": "We help you sreamline payment processes with secure and efficient solutions, enhancing transaction speed and reliability.",
+        "image": "/images/industries/payment-processing.jpg"
+      },
+      {
+        "title": "Enterprise Application Integration",
+        "description": "Ensure seamless integration and data management with our robust Enterprise Application solutions, optimizing workflows across your organization.",
+        "image": "/images/industries/enterprise-app.jpg"
+      },
+      {
+        "title": "Smart Automation",
+        "description": "Drive operational efficiency with our Smart Automation solutions, minimizing errors and enhancing productivity through streamlined processes.",
+        "image": "/images/industries/smart-automation.jpg"
+      }
+    ]
+  },
+  {
+    "id": "agri-tech",
+    "name": "Agri-Tech",
+    "title": "Transforming Agricultural Service Delivery Through Smart, Scalable Digital Platforms",
+    "description": "Fasyl has worked with stakeholders in the agritech sector to support government-led initiatives with robust digital platforms tailored for agricultural development. These solutions have enabled efficient farmer registration, input distribution, subsidy management, and real-time supply chain tracking. By digitising and integrating key processes, Fasyl’s platforms have enhanced transparency, increased program reach, and empowered institutions to make data-backed decisions that directly impact food security and rural livelihoods.",
+    "heroImage": "/images/industries/agriculture.jpg",
+    "successStories": [
+      {
+        "name": "energy bank",
+        "logo": "/images/partners/energy-bank.png"
+      },
+      {
+        "name": "Fidelity Bank",
+        "logo": "/images/partners/fidelity.png"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Seamless Integration",
+        "description": "Optimize your core banking operations with our advanced solutions that streamline processes, reduce costs, and improve service delivery.",
+        "image": "/images/industries/seamlss-integration.jpg"
+      },
+      {
+        "title": "Digital Banking Solutions",
+        "description": "We help you deliver a true omni-channel experience across all platforms, providing customers with seamless digital interactions.",
+        "image": "/images/industries/digital-banking.jpg"
+      },
+      {
+        "title": "Risk Management and Compliance",
+        "description": "We allow you strengthen your risk management framework and ensure compliance with the latest regulations to protect your institution and customers.",
+        "image": "/images/industries/risk-management.jpg"
+      },
+      {
+        "title": "Payment Processing Solutions",
+        "description": "We help you sreamline payment processes with secure and efficient solutions, enhancing transaction speed and reliability.",
+        "image": "/images/industries/payment-processing.jpg"
+      },
+      {
+        "title": "Enterprise Application Integration",
+        "description": "Ensure seamless integration and data management with our robust Enterprise Application solutions, optimizing workflows across your organization.",
+        "image": "/images/industries/enterprise-app.jpg"
+      },
+      {
+        "title": "Smart Automation",
+        "description": "Drive operational efficiency with our Smart Automation solutions, minimizing errors and enhancing productivity through streamlined processes.",
+        "image": "/images/industries/smart-automation.jpg"
+      }
+    ]
+  },
+  {
+    "id": "energy-resources",
+    "name": "Energy & Resources",
+    "title": "Driving Efficiency in the Energy & Resources Sector Through Intelligent Digital Solutions",
+    "description": "Fasyl has worked with agencies in the Energy & Resources sector to develop secure, scalable platforms that streamline service delivery and modernise operational workflows. From automating licensing and compliance tracking to enabling real-time data visibility across resource management systems, these solutions have empowered institutions to operate with greater transparency, efficiency, and accountability—ensuring sustainable impact in a rapidly evolving industry.",
+    "heroImage": "/images/industries/solar.jpg",
+    "successStories": [
+      {
+        "name": "energy bank",
+        "logo": "/images/partners/energy-bank.png"
+      },
+      {
+        "name": "Fidelity Bank",
+        "logo": "/images/partners/fidelity.png"
+      }
+    ],
+    "solutions": [
+      {
+        "title": "Seamless Integration",
+        "description": "Optimize your core banking operations with our advanced solutions that streamline processes, reduce costs, and improve service delivery.",
+        "image": "/images/industries/seamlss-integration.jpg"
+      },
+      {
+        "title": "Digital Banking Solutions",
+        "description": "We help you deliver a true omni-channel experience across all platforms, providing customers with seamless digital interactions.",
+        "image": "/images/industries/digital-banking.jpg"
+      },
+      {
+        "title": "Risk Management and Compliance",
+        "description": "We allow you strengthen your risk management framework and ensure compliance with the latest regulations to protect your institution and customers.",
+        "image": "/images/industries/risk-management.jpg"
+      },
+      {
+        "title": "Payment Processing Solutions",
+        "description": "We help you sreamline payment processes with secure and efficient solutions, enhancing transaction speed and reliability.",
+        "image": "/images/industries/payment-processing.jpg"
+      },
+      {
+        "title": "Enterprise Application Integration",
+        "description": "Ensure seamless integration and data management with our robust Enterprise Application solutions, optimizing workflows across your organization.",
+        "image": "/images/industries/enterprise-app.jpg"
+      },
+      {
+        "title": "Smart Automation",
+        "description": "Drive operational efficiency with our Smart Automation solutions, minimizing errors and enhancing productivity through streamlined processes.",
+        "image": "/images/industries/smart-automation.jpg"
+      }
+    ]
+  }
+]
