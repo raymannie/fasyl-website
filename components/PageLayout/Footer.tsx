@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { HiChevronRight } from "react-icons/hi";
 import {
@@ -114,19 +115,19 @@ export default function Footer() {
               </h4>
               <div className="space-y-7 text-gray-400">
                 <div>
-                  <a href="#" className="hover:text-white">
+                  <Link href="/company/about-us" className="hover:text-white">
                     Our Story
-                  </a>
+                  </Link>
                 </div>
                 <div>
-                  <a href="#" className="hover:text-white">
+                  <Link href="/awards" className="hover:text-white">
                     Awards
-                  </a>
+                  </Link>
                 </div>
                 <div>
-                  <a href="#" className="hover:text-white">
+                  <Link href="/resources/faq" className="hover:text-white">
                     FAQ
-                  </a>
+                  </Link>
                 </div>
                 <div>
                   <a href="#" className="hover:text-white">
@@ -142,19 +143,22 @@ export default function Footer() {
               </h4>
               <div className="space-y-7 text-gray-400">
                 <div>
-                  <a href="#" className="hover:text-white">
+                  <Link href="/products/flexcube" className="hover:text-white">
                     Oracle Digital Banking Experience
-                  </a>
+                  </Link>
                 </div>
                 <div>
-                  <a href="#" className="hover:text-white">
+                  <Link
+                    href="/products/digital-enterprise"
+                    className="hover:text-white"
+                  >
                     Fasyl Digital and Enterprise Solutions
-                  </a>
+                  </Link>
                 </div>
                 <div>
-                  <a href="#" className="hover:text-white">
+                  <Link href="/products/xnett" className="hover:text-white">
                     Xnett
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -174,11 +178,11 @@ export default function Footer() {
                     Terms & Conditions
                   </a>
                 </div>
-                <div>
+                {/* <div>
                   <a href="#" className="hover:text-white">
                     Disclaimer
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
