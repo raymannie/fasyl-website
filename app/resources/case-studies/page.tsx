@@ -3,30 +3,28 @@ import React from "react";
 import { PiCaretRightLight } from "react-icons/pi";
 import data from "@/data/case-study.json";
 import Link from "next/link";
+import { CgArrowTopRight } from "react-icons/cg";
+import SubfooterContent from "@/components/SubfooterContent";
 
 export default function CaseStudiesPage() {
   return (
     <div>
-      <section className="bg-brand-500 text-white ">
-        <div className="px-5 md:px-10 pt-16 pb-15">
-          <div className="grid gap-12 items-center">
-            <div className="max-w-[912px] mx-auto text-center">
-              <p className="title-tip text-md text-secondary-500 mb-4 justify-center">
-                Case Studies
-              </p>
-              <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6 max-w-[700px] mx-auto">
-                Explore real success stories from our global implementations
-              </h1>
-              <p className="text-gray-300 text-md leading-[180%] mb-8 max-w-[558px] mx-auto">
-                Our cost-effective technology experts have empowered leading
-                growth-focused companies, agencies, and enterprises worldwide,
-                guiding them from initial conception through successful
-                deployment and beyond.
-              </p>
-              <button className="btn btn-secondary">
-                Schedule a call <PiCaretRightLight />
-              </button>
-            </div>
+      <section className="px-5 py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-5">
+          <div className=" col-span-1 md:col-span-2 lg:col-span-3">
+            <p className="text-gray-400">CASE STUDIES</p>
+            <h3 className="text-3xl lg:text-5xl font-semibold mb-4">
+              Explore real success stories from our global implementations
+            </h3>
+            <p>
+              Our cost-effective technology experts have empowered leading
+              growth-focused companies, agencies, and enterprises worldwide,
+              guiding them from initial conception through successful deployment
+              and beyond.
+            </p>
+            <Link href={`/case-studies`} className="btn btn-primary mt-6">
+              Book A Consultation <PiCaretRightLight />
+            </Link>
           </div>
         </div>
       </section>
@@ -34,35 +32,38 @@ export default function CaseStudiesPage() {
       <section className="py-20 px-5">
         <div>
           <div className="">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-16">
+            <div className="grid max-w-7xl mx-auto px-4 md:grid-cols-2 lg:grid-cols-3 gap-5 gap-y-16">
               {data.map((item, index) => (
-                <div key={index} className="space-y-3">
-                  <div>
-                    <div className="h-[300px] w-full">
-                      <Image
-                        src={item?.image || ""}
-                        height={688}
-                        width={555}
-                        alt="banner"
-                        className="w-full h-full object-cover rounded-lg"
-                      />
-                    </div>
+                <Link
+                  href={`/case-studies/${item?.id}`}
+                  key={index}
+                  className=" block relative hover:shadow-2xl shadow-lg rounded-2xl overflow-hidden transition-shadow"
+                >
+                  <div className="h-[300px] w-full">
+                    <Image
+                      src={item?.image || ""}
+                      height={688}
+                      width={555}
+                      alt="banner"
+                      className="w-full h-full object-cover rounded-lg"
+                    />
                   </div>
-                  <Link href={`/case-studies/${item?.id}`}>
-                    <h4 className="text-xl text-brand-500 font-bold hover:text-brand-500">
+                  <div className="absolute bottom-0 left-0 p-4 py-6 flex items-end">
+                    <h4 className="text-base text-white font-semibold flex-1">
                       {item?.title}
                     </h4>
-                  </Link>
-
-                  <Link href={`/case-studies/${item?.id}`} className="btn">
-                    Read Case study <PiCaretRightLight />
-                  </Link>
-                </div>
+                    <div className=" w-9 h-9 bg-white/20 flex items-center justify-center rounded-full ml-4">
+                      <CgArrowTopRight className="text-white" />
+                    </div>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
         </div>
       </section>
+
+      <SubfooterContent />
     </div>
   );
 }

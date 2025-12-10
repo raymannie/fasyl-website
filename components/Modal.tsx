@@ -3,7 +3,7 @@ import React, { useEffect, ReactNode, MouseEvent, KeyboardEvent } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 
 // Type definitions
-type ModalSize = "sm" | "md" | "lg" | "xl" | "full";
+type ModalSize = "sm" | "md" | "lg" | "xl" | "xxl" | "full";
 
 interface ModalProps {
   isOpen: boolean;
@@ -55,6 +55,7 @@ const Modal: React.FC<ModalProps> = ({
     md: "max-w-lg",
     lg: "max-w-2xl",
     xl: "max-w-4xl",
+    xxl: "max-w-6xl",
     full: "max-w-full mx-4",
   };
 
@@ -89,7 +90,7 @@ const Modal: React.FC<ModalProps> = ({
           {showCloseButton && (
             <button
               onClick={onClose}
-              className="rounded-md p-2 absolute top-3 right-3 text-gray-400 hover:bg-gray-100 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="rounded-md p-2 z-50 absolute top-3 right-3 text-gray-400 hover:bg-gray-100 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
               aria-label="Close modal"
             >
               <IoCloseOutline size={"20"} />

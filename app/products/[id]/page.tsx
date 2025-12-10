@@ -1,7 +1,14 @@
+"use client";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import products from "@/data/products.json";
-import { HiOutlineChip } from "react-icons/hi";
+import { HiChevronRight, HiOutlineChip } from "react-icons/hi";
+import Link from "next/link";
+import { motion } from "motion/react";
+import { CheckCircle2 } from "lucide-react";
+import { Icons } from "@/icons/icons";
+import { FlickeringGrid } from "@/components/ui/flickering-grid";
+import { ShineBorder } from "@/components/ui/shine-border";
 
 // Type definitions
 interface Feature {
@@ -26,7 +33,11 @@ interface Product {
   name: string;
   title?: string;
   description?: string;
+  introImage?: string;
   heroImage?: string;
+  introHeading?: string;
+  introContent?: string;
+  introLists?: string[];
   features?: Feature[];
   benefits?: Benefit[];
   successStories?: SuccessStory[];
@@ -39,33 +50,33 @@ interface PageProps {
 }
 
 // Generate static params for all products (replaces getStaticPaths)
-export async function generateStaticParams() {
-  return (products as Product[]).map((product) => ({
-    id: product.id.toString(),
-  }));
-}
+// export async function generateStaticParams() {
+//   return (products as Product[]).map((product) => ({
+//     id: product.id.toString(),
+//   }));
+// }
 
 // Generate metadata for SEO (optional)
-export async function generateMetadata({ params }: PageProps) {
-  const resolvedParams = await params;
-  const product = (products as Product[]).find(
-    (item) => item.id.toString() === resolvedParams.id
-  );
+// export function generateMetadata({ params }: PageProps) {
+//   const resolvedParams = params;
+//   const product = (products as Product[]).find(
+//     (item) => item.id.toString() === resolvedParams.id
+//   );
 
-  if (!product) {
-    return {
-      title: "Product Not Found",
-    };
-  }
+//   if (!product) {
+//     return {
+//       title: "Product Not Found",
+//     };
+//   }
 
-  return {
-    title: `${product.name} Solutions | Fasyl`,
-    description: product.description || `Digital solutions for ${product.name}`,
-  };
-}
+//   return {
+//     title: `${product.name} Solutions | Fasyl`,
+//     description: product.description || `Digital solutions for ${product.name}`,
+//   };
+// }
 
-export default async function ProductPage({ params }: PageProps) {
-  const resolvedParams = await params;
+export default function ProductPage({ params }: PageProps) {
+  const resolvedParams = params;
 
   // Find the product with the matching ID
   const product = (products as Product[]).find(
@@ -80,34 +91,82 @@ export default async function ProductPage({ params }: PageProps) {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-brand-500 text-white">
-        <div className="px-5 md:px-10 pt-16 pb-15">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+      <section className="relative h-[calc(100vh-80px)] flex items-center justify-center">
+        <div className="absolute inset-0">
+          {/* Fallback Image (shown if video fails to load) */}
+          <Image
+            src={product.heroImage || "/images/industries/industry-hero.jpg"}
+            alt="Hero Background"
+            fill
+            className="object-cover"
+            priority
+            // width={1440}
+            // height={600}
+          />
+
+          <div className="absolute inset-0 bg-black opacity-70"></div>
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+          <h1 className="text-secondary-600 mb-6 leading-tight text-3xl md:text-5xl font-semibold">
+            <span>{product.title}</span>
+          </h1>
+          <p className="text-white text-xl mb-8 max-w-2xl mx-auto">
+            {product.description}
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact-us" className="btn btn-secondary">
+              Schedule A Call
+              <HiChevronRight size={20} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-30 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="title-tip text-secondary-500 mb-6">
-                Product - {product.name}
-              </p>
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                {product.title}
-              </h1>
-              <div
-                className="text-gray-300 text-lg mb-8 content"
-                dangerouslySetInnerHTML={{ __html: product.description || "" }}
-              ></div>
-              <button className="btn btn-secondary">Schedule a call</button>
+              <motion.h2
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, delay: 0, ease: "easeOut" }}
+                className="text-3xl md:text-5xl font-semibold mb-6"
+              >
+                {product.introHeading}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                className="text-gray-700 mb-6 leading-relaxed"
+              >
+                {product.introContent}
+              </motion.p>
+              <ul className=" space-y-3">
+                {product.introLists?.map((list, index) => {
+                  return (
+                    <li className="flex gap-2 items-center " key={index}>
+                      <CheckCircle2 className="text-green-700" size={20} />
+                      <p>{list}</p>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
 
-            <div className="relative">
-              <div className="w-full bg-gray-700 flex items-center justify-center max-w-[554px] h-[700px] ml-auto clip-Card clip-Card-left-brand">
-                {product.heroImage && (
-                  <Image
-                    src={product.heroImage}
-                    height={700}
-                    width={554}
-                    alt={product.name}
-                    className="w-full h-full object-cover"
-                  />
-                )}
+            <div className="p-10">
+              <div className="relative rounded-2xl z-10  overflow-hidden h-[550px] ">
+                <Image
+                  src={product.introImage || "/images/about-sub.png"}
+                  alt="Business collaboration"
+                  fill
+                  className="object-cover"
+                />
+                {/* <BorderBeam size={300} duration={10} /> */}
               </div>
             </div>
           </div>
@@ -115,80 +174,45 @@ export default async function ProductPage({ params }: PageProps) {
       </section>
 
       {/* Features Section */}
-      <section className="px-5 py-20">
-        <p className="title-tip-brand mb-4 flex items-center justify-center">
-          {product.name}
-        </p>
-        <h3 className="text-center text-5xl mb-20 font-medium">
-          Features of {product.name}
-        </h3>
-        <div className="grid md:grid-cols-2 gap-5">
-          {product.features?.map((feature: Feature, index: number) => (
-            <div
-              key={index}
-              className="p-6 bg-secondary-500 space-y-6 rounded-2xl"
-            >
-              <div className="h-[350px] w-full">
-                <Image
-                  src={feature.image || "/images/office.jpg"}
-                  height={688}
-                  width={555}
-                  alt={feature.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h4 className="title-tip-brand font-medium text-2xl text-brand-500">
-                {feature.title}
-              </h4>
-              <p className="text-sm leading-[150%]">{feature.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Success Stories Section */}
-      <section className="px-5 py-30">
-        <h3 className="text-center text-lg font-medium mb-4">
-          Our Success Stories
-        </h3>
-
-        <div className="flex justify-center items-center space-x-6">
-          {product.successStories?.map((story: SuccessStory, index: number) => (
-            <div key={index} className="py-4">
-              <Image
-                src={story.logo}
-                height={40}
-                width={100}
-                alt={story.name}
-                className="h-15 object-contain mx-auto"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Benefits Section */}
       <section className="px-5 py-12">
-        <h3 className="text-center text-5xl mb-20 font-medium">
-          Benefits of {product.name}
-        </h3>
-        <div className=" inline-flex flex-wrap  justify-center gap-5 text-white">
-          {product.benefits?.map((benefit: Benefit, index: number) => (
-            <div
-              key={index}
-              className="p-6 md:max-w-[30%] bg-brand-500 space-y-4 rounded-2xl"
-            >
-              <div className="h-[180px] w-full">
-                <div className="w-12 h-12 bg-secondary-500 text-brand-500 flex items-center justify-center rounded-xl">
-                  <HiOutlineChip className="text-2xl" />
+        <div className="max-w-7xl mx-auto px-4 ">
+          <p>FEATURES</p>
+          <h3 className="text-5xl font-semibold mb-12">
+            Solutions for {product.name}
+          </h3>
+
+          <div className="grid md:grid-cols-3 gap-5">
+            {product.features?.map((feature: Feature, index: number) => (
+              <div
+                key={index}
+                className="p-6 space-y-4 rounded-2xl bg-gray-100 relative overflow-hidden hover:bg-gray-200 transition-all group"
+              >
+                <ShineBorder
+                  shineColor="#FEDC71"
+                  borderWidth={5}
+                  className="group-hover:opacity-100 transition-opacity duration-300 opacity-0 z-20"
+                />
+                <FlickeringGrid
+                  className="absolute inset-0 z-0 size-full"
+                  squareSize={3}
+                  gridGap={3}
+                  color="#ddd"
+                  maxOpacity={0.5}
+                  flickerChance={0.1}
+                />
+
+                <div className="mb-8">
+                  <div className="w-14 h-14 bg-[#B7E0F3] rounded-full flex items-center justify-center  transition-colors">
+                    <Icons.chatbot className="text-4xl txt-[#1AA3E3]" />
+                  </div>
                 </div>
+                <h4 className=" text-lg font-semibold">{feature.title}</h4>
+                <p className="text-base leading-[150%]">
+                  {feature.description}
+                </p>
               </div>
-              <h4 className="font-medium text-lg text-secondary-500">
-                {benefit.title}
-              </h4>
-              <p className="text-sm leading-[150%]">{benefit.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     </div>

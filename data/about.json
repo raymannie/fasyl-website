@@ -6,24 +6,20 @@
   "story": {
     "stats": [
       {
-        "number": "25+",
-        "description": "International OEM partners"
+        "number": "25",
+        "label": "Years of Industry Experience"
       },
       {
-        "number": "200+",
-        "description": "Locations Across The Globe"
+        "number": "100",
+        "label": "Clients Served Globally"
       },
       {
-        "number": "Over 35%",
-        "description": "Banks in Africa Served"
+        "number": "200",
+        "label": "Projects Completed"
       },
       {
-        "number": "95%",
-        "description": "Of Nigerian Institutions Served"
-      },
-      {
-        "number": "32",
-        "description": "Countries in Sub-Saharan Africa Empowered"
+        "number": "150",
+        "label": "Industry Experts"
       }
     ],
     "content": "<p>Fasyl Technology Group was founded in 1999 with the name Finance Applications System Limited and has metamorphosized from a one-country financial institution to a multiple-country technology conglomerate, covering aspects of not just financial technology but other industries and markets. Currently, Fasyl, with its 13-country operational office presence, services over 100 countries and beyond, including small, medium, and large institutions in finance, telecommunications, manufacturing, the public sector, and more. </p> <p>Today, Fasyl Technology Group is proud to employ over 200 dedicated professionals who drive innovation and deliver exceptional solutions from our offices in South Africa, India, and sub-Saharan Africa. With over 100 core organization re-engineering and transformation projects completed, we have consistently demonstrated our expertise and dedication to fostering business growth. Our journey is a testament to our relentless pursuit of excellence and our commitment to shaping the future of financial technology for our clients.</p> <p>Fasyl has a unique presence in the market by developing local resources with a global perspective. While 99.9% of technology software service vendors rely on foreign resources for enterprise-level products, Fasyl provides full-resource capacity independently of any foreign OEMs. We excel in selling, implementing, and supporting financial software products with an highly skilled team.</p>"

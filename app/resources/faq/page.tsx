@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { PiCaretDownLight } from "react-icons/pi";
 import data from "@/data/faq.json";
+import { MinusCircleIcon, PlusCircleIcon } from "lucide-react";
 
 export default function FaqPage() {
   const [activeSection, setActiveSection] = useState<string | null>(
@@ -14,20 +15,17 @@ export default function FaqPage() {
   return (
     <div>
       {/* Hero section */}
-      <section className="bg-brand-500 text-white ">
-        <div className="px-5 md:px-10 pt-16 pb-15">
-          <div className="grid gap-12 items-center">
-            <div className="max-w-[912px] mx-auto text-center">
-              <p className="title-tip text-md text-secondary-500 justify-center mb-4">
-                FAQ
-              </p>
-              <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6 max-w-[500px] mx-auto">
-                Frequently Asked Questions
-              </h1>
-              <p className="text-gray-300 text-md leading-[180%] mb-8 max-w-[558px] mx-auto">
-                Everything you need to know about our services
-              </p>
-            </div>
+      <section className="px-5 py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-5">
+          <div className=" col-span-1 md:col-span-2 lg:col-span-3">
+            <p className="text-gray-400">FAQs</p>
+            <h3 className="text-3xl lg:text-5xl font-semibold mb-4">
+              Help Center
+            </h3>
+            <p>
+              Everything you need to know about our services, solutions, and how
+              we can assist your business.
+            </p>
           </div>
         </div>
       </section>
@@ -41,32 +39,34 @@ export default function FaqPage() {
                 key={section.id}
                 className={`rounded-lg overflow-hidden transition-all duration-300 ease-in-out ${
                   isActive
-                    ? "bg-gray-800 text-white shadow-lg"
-                    : " bg-[#F0FAFF] hover:bg-gray-50 hover:shadow-md"
+                    ? "bg-gray-100 shadow-lg"
+                    : " hover:bg-gray-50 hover:shadow-md"
                 }`}
               >
                 <div
-                  className={`p-6 cursor-pointer flex items-center justify-between transition-all duration-200 ${
+                  className={`p-6 cursor-pointer flex items-center transition-all duration-200 ${
                     isActive ? "" : "hover:bg-gray-50"
                   }`}
                   onClick={() => toggleSection(section.id)}
                 >
+                  <div
+                    className={`transition-all duration-300 transform mr-2 ${
+                      isActive ? " rotate-180" : " rotate-0"
+                    }`}
+                  >
+                    {isActive ? (
+                      <PlusCircleIcon className="text-gray-300" size={20} />
+                    ) : (
+                      <MinusCircleIcon className="text-gray-300" size={20} />
+                    )}
+                  </div>
                   <h3
-                    className={`font-bold text-lg transition-colors duration-200 ${
-                      isActive ? "text-white" : "text-gray-800"
+                    className={`font-bold text-lg transition-colors duration-200 flex-1 ${
+                      isActive ? "" : ""
                     }`}
                   >
                     {section.title}
                   </h3>
-                  <div
-                    className={`transition-all duration-300 transform ${
-                      isActive
-                        ? "text-white rotate-180"
-                        : "text-gray-600 rotate-0"
-                    }`}
-                  >
-                    <PiCaretDownLight size={16} />
-                  </div>
                 </div>
 
                 <div
@@ -76,7 +76,7 @@ export default function FaqPage() {
                 >
                   <div
                     className={`px-6 pb-6 transition-colors duration-200 ${
-                      isActive ? "text-gray-300" : "text-gray-600"
+                      isActive ? "" : ""
                     }`}
                   >
                     <p>{section.content}</p>

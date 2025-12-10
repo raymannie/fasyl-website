@@ -3,8 +3,15 @@
     "id": "banking",
     "name": "Banking",
     "title": "Empowering Banks to Thrive in a Digital-First World with Agile Solutions",
+    "heroText": "The banking industry is rapidly evolving through digital innovation. Fasyl Technology Group leads this transformation, equipping banks with cutting-edge solutions to stay competitive, boost efficiency, and unlock new growth opportunities.",
     "description": "The banking industry is undergoing rapid transformation driven by digital innovation and evolving customer expectations. Fasyl Technology Group is at the forefront of this evolution, equipping banks with the technology and expertise necessary to remain competitive, enhance efficiency, and elevate customer experiences. With our cutting-edge solutions, we assist banks in navigating the complexities of the digital landscape and unlocking new growth opportunities.",
-    "heroImage": "/images/industries/banking.jpg",
+    "heroImage": "/images/industries/bank-hall.jpg",
+    "subHeading": "Revolutionizing Banking Through Digital Innovation",
+    "subText": "Our innovative banking solutions backed by technology ensure that banks meet up with their customer expectation, drive operational excellence and accelerate digital transformation",
+    "subImages": [
+      "/images/industries/banks.png",
+      "/images/industries/banks.png"
+    ],
     "successStories": [
       {
         "name": "energy bank",
@@ -52,8 +59,15 @@
     "id": "public-sector",
     "name": "Public Sector",
     "title": "Enabling Efficient Governance Through Digital Platforms Built for Public Service Delivery",
+    "heroText": "We partner with government agencies to transform public service delivery through cutting-edge digital platforms. Our solutions streamline complex workflows, enhance operational efficiency, and create seamless experiences for citizens accessing essential government services.",
     "description": "Fasyl has worked with the public sector to develop and deploy robust digital platforms that enable seamless service delivery and optimize internal workflows. Through strategic collaboration with government agencies, Fasyl has helped digitize manual processes, enhance transparency, and improve access to essential services for citizens. Our solutions are built to meet regulatory standards while ensuring scalability, security, and ease of use—supporting public institutions in their mission to deliver efficient, technology-driven governance.",
-    "heroImage": "/images/industries/code.jpg",
+    "heroImage": "/images/industries/public-sector.jpg",
+    "subHeading": "Transforming Public Service Delivery",
+    "subText": "From automated processing systems to integrated service portals, we help public sector organizations modernize their operations while maintaining the highest standards of security and compliance required for government environments.",
+    "subImages": [
+      "/images/industries/public-neural.png",
+      "/images/industries/public-neural.png"
+    ],
     "successStories": [
       {
         "name": "energy bank",
@@ -101,8 +115,15 @@
     "id": "agri-tech",
     "name": "Agri-Tech",
     "title": "Transforming Agricultural Service Delivery Through Smart, Scalable Digital Platforms",
+    "heroText": "Fasyl has worked with stakeholders in the agritech sector to support government-led initiatives with robust digital platforms tailored for agricultural development. These solutions have enabled efficient farmer registration, input distribution, subsidy management, and real-time supply chain tracking. By digitising and integrating key processes,",
     "description": "Fasyl has worked with stakeholders in the agritech sector to support government-led initiatives with robust digital platforms tailored for agricultural development. These solutions have enabled efficient farmer registration, input distribution, subsidy management, and real-time supply chain tracking. By digitising and integrating key processes, Fasyl’s platforms have enhanced transparency, increased program reach, and empowered institutions to make data-backed decisions that directly impact food security and rural livelihoods.",
-    "heroImage": "/images/industries/agriculture.jpg",
+    "heroImage": "/images/industries/greenland.jpg",
+    "subHeading": "Revolutionizing Agriculture Through Technology",
+    "subText": "We empower agricultural stakeholders with innovative digital solutions that optimize farming operations and enhance productivity across the value chain. Our platforms enable farmers, cooperatives, and agribusinesses to streamline processes from crop planning to market distribution, improving yield management and resource allocation.",
+    "subImages": [
+      "/images/industries/farm.png",
+      "/images/industries/agriculture.jpg"
+    ],
     "successStories": [
       {
         "name": "energy bank",
@@ -150,8 +171,15 @@
     "id": "energy-resources",
     "name": "Energy & Resources",
     "title": "Driving Efficiency in the Energy & Resources Sector Through Intelligent Digital Solutions",
+    "heroText": "From automating licensing and compliance tracking to enabling real-time data visibility across resource management systems, these solutions have empowered institutions to operate with greater transparency, efficiency, and accountability—ensuring sustainable impact in a rapidly evolving industry.",
     "description": "Fasyl has worked with agencies in the Energy & Resources sector to develop secure, scalable platforms that streamline service delivery and modernise operational workflows. From automating licensing and compliance tracking to enabling real-time data visibility across resource management systems, these solutions have empowered institutions to operate with greater transparency, efficiency, and accountability—ensuring sustainable impact in a rapidly evolving industry.",
-    "heroImage": "/images/industries/solar.jpg",
+    "heroImage": "/images/industries/energy.jpg",
+    "subHeading": "Powering the Future of Energy and Resources",
+    "subText": "We deliver comprehensive digital solutions that optimize operations across the energy and natural resources sectors. Our platforms enable oil, gas, mining, and renewable energy companies to streamline exploration, production, and distribution processes while enhancing safety protocols and regulatory compliance.",
+    "subImages": [
+      "/images/industries/windmill.png",
+      "/images/industries/solar.jpg"
+    ],
     "successStories": [
       {
         "name": "energy bank",

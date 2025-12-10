@@ -3,53 +3,57 @@ import { FaPhone } from "react-icons/fa";
 import { IoMdPin } from "react-icons/io";
 import { IoMailSharp } from "react-icons/io5";
 import data from "@/data/contact.json";
+import { ShineBorder } from "@/components/ui/shine-border";
 
 export default function ContactPage() {
   return (
     <div>
       {/* Hero section */}
-      <section className="bg-brand-500 text-white ">
-        <div className="px-5 md:px-10 pt-16 pb-15">
-          <div className="grid gap-12 items-center">
-            <div className="max-w-[912px] mx-auto text-center">
-              <p className="title-tip text-md text-secondary-500 mb-4 justify-center">
-                Contact us
-              </p>
-              <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6 max-w-[500px] mx-auto">
-                We would love to hear from you
-              </h1>
-              <p className="text-gray-300 text-md leading-[180%] mb-8 max-w-[558px] mx-auto">
-                For inquiries, support, or to discuss how Fasyl Technology Group
-                can assist with your financial technology needs, reach out to us
-                through any of our global offices. Our team is here to provide
-                you with tailored solutions and exceptional service.
-              </p>
-            </div>
+      <section className="px-5 py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-5">
+          <div className=" col-span-1 md:col-span-2 lg:col-span-3">
+            <p className="text-gray-400">CONTACT US</p>
+            <h3 className="text-5xl font-semibold mb-4">
+              We would love to hear from you
+            </h3>
+            <p>
+              For inquiries, support, or to discuss how Fasyl Technology Group
+              can assist with your financial technology needs, reach out to us
+              through any of our global offices. Our team is here to provide you
+              with tailored solutions and exceptional service.
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="px-5">
-        <div className="py-20 grid md:grid-cols-3 gap-5">
+      <section id="open-positions" className="py-10 ">
+        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-5">
           {data.map((item, index) => (
             <div
               key={index}
-              className="rounded-lg border border-secondary-700 p-10 space-y-3 bg-secondary-500 bg-[url(/images/pattern.png)] bg-repeat"
+              className=" bg-gray-100 p-6 bg-[url(/images/pattern.png)] bg-repeat rounded-2xl pr-16 relative group "
             >
-              <p className="text-lg font-bold">{item.location}</p>
-              <div className="flex">
-                <IoMdPin className="text-brand-500 mt-1.5 mr-2" />
-                <div className="flex-1">
-                  <p className="text-sm">{item.officeAdress}</p>
+              <ShineBorder
+                shineColor="#FEDC71"
+                borderWidth={5}
+                className="group-hover:opacity-100 transition-opacity duration-300 opacity-0 z-20"
+              />
+              <div className="space-y-3">
+                <p className="text-lg font-bold">{item.location}</p>
+                <div className="flex">
+                  <IoMdPin className="text-brand-500 mt-1.5 mr-2" />
+                  <div className="flex-1">
+                    <p className="text-sm">{item.officeAdress}</p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-center space-x-2">
-                <FaPhone />
-                <p className="text-sm">{item.phone}</p>
-              </div>
-              <div className="flex items-center space-x-2">
-                <IoMailSharp />
-                <p className="text-sm">{item.email}</p>
+                <div className="flex items-center space-x-2">
+                  <FaPhone />
+                  <p className="text-sm">{item.phone}</p>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <IoMailSharp />
+                  <p className="text-sm">{item.email}</p>
+                </div>
               </div>
             </div>
           ))}

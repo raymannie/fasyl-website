@@ -2,9 +2,18 @@
   {
     "id": "flexcube",
     "name": "Flexcube",
-    "title": "We're Oracle Flexcube's Oldest Partner With Over Two Decades Of Experience",
-    "description": "Oracle Flexcube is a core banking system designed for a variety of financial institutions. It seamlessly integrates with other applications and supports functions like retail banking, corporate finance, customer onboarding, loan origination, and lending. By automating banking operations, Flexcube improves efficiency and reduces costs. With over 750 customers, including major banks and fintech companies, Flexcube is widely trusted. Fasyl Technology, an Oracle Platinum Partner, has implemented the system in more than 42 countries, driving growth and innovation. Recent initiatives include launching a digital Islamic bank and cross-border banking solutions in Africa and the Asia-Pacific region.",
-    "heroImage": "/images/flexcube.jpg",
+    "title": "we’re Oracle Flexcube’s Oldest Partners With Decades Of Experience",
+    "description": "Oracle Flexcube is a core banking system supporting retail and corporate banking operations through integrated customer onboarding, lending, deposits, and omnichannel services.",
+    "heroImage": "/images/products/flexcube.jpg",
+    "introImage": "/images/products/flexcube.png",
+    "introHeading": "Oracle Flexcube Delivers Significant Advantages For Mordern Banks",
+    "introContent": "Our innovative banking solutions backed by technology ensure that banks meet up with their customer expectation, drive operational excellence and accelerate digital transformation",
+    "introLists": [
+      "Multiple Service Delivery",
+      "Comprehensive Banking",
+      "Third-Party Integration",
+      "Local Support & Expertise"
+    ],
     "successStories": [
       {
         "name": "Access Bank",
@@ -70,8 +79,17 @@
     "id": "obdx",
     "name": "OBDX",
     "title": "Revolutionize Your Bank’s Digital Customer Journey with OBDX’s Seamless Solutions",
-    "description": "<p>Oracle Banking Digital Experience (OBDX) is an advanced digital banking solution that empowers financial institutions to deliver a comprehensive range of banking services through Internet and mobile platforms. With over seven years of industry presence, OBDX offers a seamless omni-channel experience across all digital platforms.</p> <p>OBDX provides a flexible and integrative solution that can be seamlessly incorporated into a bank’s existing internal systems. Fasyl Technology Group has successfully implemented OBDX for various clients, including digital-only banks and Islamic banks, resulting in a significant increase in digital transactions and enhanced customer engagement.</p>",
-    "heroImage": "/images/oracle-banner.jpg",
+    "description": "Oracle Banking Digital Experience (OBDX) is an advanced digital banking solution that empowers financial institutions to deliver a comprehensive range of banking services through Internet and mobile platforms. With over seven years of industry presence, OBDX offers a seamless omni-channel experience across all digital platforms.",
+    "heroImage": "/images/products/obdx.jpg",
+    "introImage": "/images/products/obdx.png",
+    "introHeading": "OBDX Provides A Flexible And seamless integrative solution",
+    "introContent": "Fasyl Technology Group has successfully implemented OBDX for various clients, including digital-only banks and Islamic banks, resulting in a significant increase in digital transactions and enhanced customer engagement.",
+    "introLists": [
+      "Enhanced Customer Experience",
+      "Improved Efficiency",
+      "Scalability",
+      "Real-Time Support"
+    ],
     "successStories": [
       {
         "name": "Polaris Bank",
@@ -136,8 +154,17 @@
     "id": "digital-enterprise",
     "name": "Digital & Enterprise",
     "title": "Maximize Your Efficiency and Growth with Fasyl’s Digital and Enterprise Solutions",
-    "description": "<p>Fasyl’s digital and enterprise solutions empower industries like telecom, banking, fintech, and government to achieve unparalleled growth. Our comprehensive product suites offer inclusive technology platforms for businesses of all sizes, facilitating seamless transactions and customer service. With support for multiple languages, including English, French, Portuguese, and Arabic, our solutions ensure accessibility and integration into the financial ecosystem across various regions. </p>",
-    "heroImage": "/images/typing-hand.png",
+    "description": "Fasyl’s digital and enterprise solutions empower industries like telecom, banking, fintech, and government to achieve unparalleled growth. Our comprehensive product suites offer inclusive technology platforms for businesses of all sizes, facilitating seamless transactions and customer service. ",
+    "heroImage": "/images/products/digital-ent.jpg",
+    "introImage": "/images/products/digital-ent.png",
+    "introHeading": "Seamless Integration Across Languages and Regions",
+    "introContent": "With support for multiple languages, including English, French, Portuguese, and Arabic, our solutions ensure accessibility and integration into the financial ecosystem across various regions.",
+    "introLists": [
+      "Tailored Solutions",
+      "Comprehensive Financial Coverage",
+      "Multilingual Capabilities",
+      "Technological Agility"
+    ],
     "successStories": [
       {
         "name": "Polaris Bank",
@@ -201,9 +228,18 @@
   {
     "id": "xnett",
     "name": "Xnett",
-    "title": "Future-Proof Your Banking Operations With Xnett",
-    "description": "<p>Xnett is an advanced software solution developed by Fasyl, tailored for the financial sector to streamline and optimize business operations. It seamlessly integrates with existing core systems through robust APIs, effectively automating key processes and reducing manual efforts. Xnett encompasses a versatile suite of products, including check truncation, automated clearing houses, and internet banking, providing comprehensive solutions that meet diverse business requirements. </p> <p>The platform ensures high security with advanced features and complies with regulatory standards across multiple African countries, ensuring safe and compliant business practices. With its flexible architecture and regular updates, Xnett is a dependable choice for businesses aiming for efficiency and robust security. Fasyl, leveraging extensive industry expertise, has successfully deployed Xnett in various markets, fostering operational excellence and digital transformation across the region.</p>",
-    "heroImage": "/images/xnett.jpg",
+    "title": "Future-Proof Your Banking Operations With Xnet",
+    "description": "Xnett is an advanced software solution developed by Fasyl, tailored for the financial sector to streamline and optimize business operations. It seamlessly integrates with existing core systems through robust APIs, effectively automating key processes and reducing manual efforts.",
+    "heroImage": "/images/products/xnett.jpg",
+    "introImage": "/images/products/xnett.png",
+    "introHeading": "Xnett: Comprehensive Digital Banking Solutions Across Africa",
+    "introContent": "The platform ensures high security with advanced features and complies with regulatory standards across multiple African countries, ensuring safe and compliant business practices.",
+    "introLists": [
+      "Enhanced Efficiency",
+      "Cost-Effectiveness",
+      "Improved Security",
+      "Scalability"
+    ],
     "successStories": [
       {
         "name": "Polaris Bank",
