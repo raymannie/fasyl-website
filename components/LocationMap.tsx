@@ -4,6 +4,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { Globe } from "./ui/globe";
 import { COBEOptions } from "cobe";
 import { DottedMap } from "./ui/dotted-map";
+import countries from "@/data/contact.json";
 
 interface Location {
   id: number;
@@ -78,7 +79,7 @@ export default function LocationMap() {
     baseColor: [1, 1, 1], // Transparent/white (makes globe invisible)
     markerColor: [254 / 255, 217 / 255, 102 / 255], // #FED966 secondary color
     glowColor: [1, 1, 1], // Transparent glow
-    markers: locations.map((loc) => ({
+    markers: countries.map((loc) => ({
       location: [loc.lat, loc.lng],
       size: loc.id === selectedLocation ? 0.12 : 0.08,
     })),
@@ -95,8 +96,8 @@ export default function LocationMap() {
       </div>
 
       <div className="text-center relative z-10">
-        <div className="inline-flex gap-4 items-center">
-          {locations.map((loc) => (
+        <div className="inline-flex flex-wrap gap-4 justify-center items-center max-w-5xl mx-auto">
+          {countries.map((loc) => (
             <button
               key={loc.id}
               onClick={() => handleLocationClick(loc.lat, loc.lng, loc.id)}
@@ -118,7 +119,7 @@ export default function LocationMap() {
                   {/* <h3 className="text-lg font-semibold text-brand-500 mb-1">
                     {loc.name}
                   </h3> */}
-                  <p className="text-sm text-gray-600">{loc.country}</p>
+                  <p className="text-sm text-gray-600">{loc.location}</p>
                 </div>
               </div>
             </button>

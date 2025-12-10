@@ -1,62 +1,92 @@
 [
   {
+    "id": 1,
     "location": "Nigeria",
     "officeAdress": "Finance Application System Ltd. 53 Raymond Njokwu, Awolowo road, Ikoyi, Lagos, Nigeria",
     "phone": "(+234) 802 305 3761",
-    "email": "info@Fasylgroup.com"
+    "email": "info@Fasylgroup.com",
+    "lat": 6.4541,
+    "lng": 3.4247
   },
   {
+    "id": 2,
     "location": "India",
     "officeAdress": "Fasyl India Trading as BFI Technology Sai Suraksha, No. 1090, 2nd Floor, 12th Main Rd, HAL 2nd Stage, Doopanahalli, Indiranagar, Bengaluru, Karnataka 560038, India",
     "phone": "(+91) 959 110 9328",
-    "email": "info@Fasylgroup.com"
+    "email": "info@Fasylgroup.com",
+    "lat": 12.9716,
+    "lng": 77.5946
   },
   {
+    "id": 3,
     "location": "South Africa",
     "officeAdress": "Fasyl South Africa Fourways Office Park, Fourways Blvd, 2191 Johannesburg, South Africa",
     "phone": "(+27) 11 465 1900",
-    "email": "info@Fasylsa.com"
+    "email": "info@Fasylsa.com",
+    "lat": -26.0104,
+    "lng": 28.0075
   },
   {
+    "id": 4,
     "location": "Tanzania",
     "officeAdress": "Fasyl Tanzania 4th Floor Apt 402, Mavuno Salaam, Tanzania",
     "phone": "(+255) 22 212 0754",
-    "email": "Fasyl@Fasylgroup.com"
+    "email": "Fasyl@Fasylgroup.com",
+    "lat": -6.7924,
+    "lng": 39.2083
   },
   {
+    "id": 5,
     "location": "Ghana",
     "officeAdress": "Fasyl Technology Ghana Limited Fasyl HOUSE, No 10 NIME Lane, Airport Residential Area, Greater Accra, Ghana",
     "phone": "(+233) 24 573 3851",
-    "email": "Fasyl@Fasylgroup.com"
+    "email": "Fasyl@Fasylgroup.com",
+    "lat": 5.6037,
+    "lng": -0.187
   },
   {
+    "id": 6,
     "location": "Côte d'Ivoire",
     "officeAdress": "Fasyl Côte d'Ivoire Complex Gris A Droite, Batiment, #1 Blvd Eglise CEMA, 2eme Rue BIP Securité, Cocody Les 2-Plateaux, 7eme Tranche, 30eme Arrondissement, Atogban Abidjan 01, 01 BP 6528, Côte d'Ivoire ",
     "phone": "(+225) 22 42 07 42",
-    "email": "Fasyl@Fasylgroup.com"
+    "email": "Fasyl@Fasylgroup.com",
+    "lat": 5.36,
+    "lng": -4.0083
   },
   {
+    "id": 7,
     "location": "Kenya",
     "officeAdress": "Fasyl Kenya Real Towers, 3rd Floor, Hospital Road, Upper Hill, Nairobi",
     "phone": "(+254) 20 514 8400",
-    "email": "Fasyl@Fasylgroup.com"
+    "email": "Fasyl@Fasylgroup.com",
+    "lat": -1.2864,
+    "lng": 36.8172
   },
   {
+    "id": 8,
     "location": "Mauritius",
     "officeAdress": "Fasyl Technology Group 1/F River Court, 6 St Denis Street, Port Louis, Mauritius",
     "phone": "(+230) 208 9033",
-    "email": "Fasyl@Fasylgroup.com"
+    "email": "Fasyl@Fasylgroup.com",
+    "lat": -20.1609,
+    "lng": 57.5012
   },
   {
+    "id": 9,
     "location": "Libya",
     "officeAdress": "Fasyl Libya Medneen Street, near UAE Embassy, Gergaresh Road, Tripoli, Libya",
     "phone": "(+218) 924 536 896",
-    "email": "Fasyl@Fasylgroup.com"
+    "email": "Fasyl@Fasylgroup.com",
+    "lat": 32.8872,
+    "lng": 13.1913
   },
   {
+    "id": 10,
     "location": "Sierra Leone",
     "officeAdress": "Fasyl Sierra Leone 3rd Floor, SLBC Building, 35a Lightfoot Boston Street, Freetown, Sierra Leone",
     "phone": "+00 0000 0000",
-    "email": "Fasyl@Fasylgroup.com"
+    "email": "Fasyl@Fasylgroup.com",
+    "lat": 8.4657,
+    "lng": -13.2317
   }
 ]
