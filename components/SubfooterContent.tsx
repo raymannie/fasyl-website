@@ -51,7 +51,6 @@ export default function SubfooterContent() {
                 fill
                 className="object-cover"
               />
-              {/* <BorderBeam size={300} duration={10} /> */}
             </div>
           </div>
         </div>
